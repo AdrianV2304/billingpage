@@ -1,0 +1,23 @@
+@use "scss" as *;
+
+.card {
+  position: relative;
+  width: fit-content;
+  height: fit-content;
+  border-radius: 30px;
+  margin: 160px auto;
+  display: flex;
+  flex-direction: row;
+
+  &::after {
+    content: " ";
+    position: absolute;
+    top: -52px;
+    left: -61px;
+    background-color: $red;
+    width: 276px;
+    height: 850px;
+    z-index: -1;
+    border-radius: 46px;
+  }
+}

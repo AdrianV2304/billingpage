@@ -1,0 +1,24 @@
+@use "scss" as *;
+
+.orders {
+  &__list {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 8px 16px;
+    gap: 114px;
+
+    > span {
+      width: 120px;
+      font-weight: 500;
+      color: $textcolorblue;
+    }
+  }
+
+  &__list:hover {
+    background: #fff;
+    box-shadow: 0px 8px 19px rgba(223, 223, 253, 0.6);
+    border-radius: 8px;
+  }
+}

@@ -1,0 +1,54 @@
+@use "scss" as *;
+
+.nav {
+  height: 100%;
+  width: 260px;
+  background-color: #f8f8ff;
+  padding: 58px 48px 29px 38px;
+  border-top-left-radius: 30px 30px;
+  border-bottom-left-radius: 30px 30px;
+
+  &__avatar {
+    width: fit-content;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 49px;
+    gap: 8px;
+
+    &--name {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+
+      > span {
+        font-weight: 700;
+      }
+    }
+  }
+
+  &__buttons {
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    gap: 16px;
+    font-size: 14px;
+
+    &--options {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      gap: 8px;
+    }
+
+    &--logout {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      gap: 8px;
+      margin-top: 368px;
+      font-size: 14px;
+    }
+  }
+}
